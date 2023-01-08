@@ -13,5 +13,6 @@ Use React with Typescript to build you solution.
 
 ## Getting started with this repo
 
-Run `npm install` before you get started.
-Add your code to the `src/countdown-timer.tsx` file.
+- Run `npm install` before you get started.
+- Add your code to the `src/countdown-timer.tsx` file.
+- Run the app with `npm start`
