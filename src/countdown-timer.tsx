@@ -8,24 +8,16 @@ const CountdownTimer = () => {
         let timer: NodeJS.Timeout;
     
         if (running) {
-          timer = setInterval(() => {
-            setCountdown((prevCountdown) => prevCountdown - 1);
-          }, 1000);
-        } else {
-          clearInterval(timer);
-        }
+          timer = setInterval(() => { setCountdown((prevCountdown) => prevCountdown - 1); }, 1000);
+        } else { clearInterval(timer); }
     
         return () => { clearInterval(timer); };
       }, [running]);
 
 
-      const startTimer = () => {
-        setRunning(true);
-      };
+      const startTimer = () => { setRunning(true); };
     
-      const stopTimer = () => {
-        setRunning(false);
-      };
+      const stopTimer = () => { setRunning(false); };
     
       const resetTimer = () => {
         setRunning(false);
